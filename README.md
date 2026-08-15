@@ -71,6 +71,10 @@ On github.com, open any file and click the **pencil icon** to edit, then **Commi
 - [ ] Confirm the "Paid for by Howse for Commissioner" footer line matches how you want the site attributed
 - [ ] Skim every page on your phone — the whole site is built mobile-first
 
+## Analytics
+
+Every page carries the Cloudflare Web Analytics beacon (the small script just before `</body>`). Stats live in the Cloudflare dashboard under Web Analytics — cookieless, no consent banner needed. If pages are ever regenerated, the beacon is included automatically.
+
 ## Automatic meeting dates
 
 `site.js` computes the next Commission Meeting (1st & 3rd Mondays, 6:00 PM — shifted to Tuesday after MLK Day, Presidents Day, Labor Day, or a Monday New Year's), the next Workshop (4th Mondays, 4:30 PM), and the next Community CARE (5th Mondays), and fills every element with a `data-next` attribute — including the red strip at the top of every page. No more manual date updates. December meetings are sometimes cancelled by the city; the homepage note points readers to the official agenda page.
