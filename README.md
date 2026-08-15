@@ -71,6 +71,10 @@ On github.com, open any file and click the **pencil icon** to edit, then **Commi
 - [ ] Confirm the "Paid for by Howse for Commissioner" footer line matches how you want the site attributed
 - [ ] Skim every page on your phone — the whole site is built mobile-first
 
+## Search (SEO)
+
+`sitemap.xml` and `robots.txt` live at the site root; every page carries a canonical URL, Open Graph tags (so Facebook/social shares show a proper card with photo), and the homepage declares schema.org Person data linking Laura's official profiles. After content updates, no action needed — but if pages are added, add them to `sitemap.xml`.
+
 ## Analytics
 
 Every page carries the Cloudflare Web Analytics beacon (the small script just before `</body>`). Stats live in the Cloudflare dashboard under Web Analytics — cookieless, no consent banner needed. If pages are ever regenerated, the beacon is included automatically.
