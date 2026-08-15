@@ -89,3 +89,36 @@ Each vote is one `<tr>` row in `voting-record.html`. After new minutes are appro
 - Attendance and voting charts (the "Commission Intelligence" idea) — best added only once the underlying vote data has been spot-checked for accuracy
 
 *Working together for Collegedale.* ★
+
+## The "Updates" section (currently hidden)
+
+The homepage's "Latest from City Hall" section is removed until there's a first real update — placeholder slots on a live site look unfinished. When Laura has one (a vote recap in her words, a project status, a CARE reminder), paste this block back into `index.html` just above `</main>`, write the newest card first, and delete the placeholder wording:
+
+```html
+    <!-- ═══ UPDATES ══════════════════════════════════════════════
+         EDIT ME: newest update goes first. Copy an <article> block,
+         change the date, title, and text. Keep it to 3–6 cards. -->
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Updates</p>
+        <h2>The latest from City Hall</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <span class="date">Add a date</span>
+            <h3>Your newest update goes here</h3>
+            <p>Use this space for plain-English updates after commission meetings, project milestones, or upcoming events. Short and frequent beats long and rare.</p>
+          </article>
+          <article class="card reveal">
+            <span class="date">Add a date</span>
+            <h3>Second update slot</h3>
+            <p>Ideas: a recap of last night's vote and why she voted the way she did, a road-project status, or a heads-up about a public hearing residents should know about.</p>
+          </article>
+          <article class="card reveal">
+            <span class="date">Sept 2025</span>
+            <h3>Katie Lamb Library, renovated</h3>
+            <p>The library reopened after a summer of renovation and expansion, supported by a state grant of up to $200,000 that she — a library board member — helped secure for the city.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+```
