@@ -606,3 +606,18 @@ main { background: var(--paper); }
 .photo-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.8rem; }
 .photo-duo img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow); }
 @media (max-width: 640px) { .photo-duo { grid-template-columns: 1fr; } }
+
+/* ---------- Next CARE meeting card ---------- */
+.next-card {
+  background: #fff; color: var(--ink);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  border-top: 6px solid var(--red);
+  padding: 2rem 2.2rem; max-width: 720px;
+}
+.next-card h3 {
+  font-family: var(--display); font-weight: 800; font-stretch: 116%;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  font-size: 0.95rem; color: var(--red); margin-bottom: 1rem;
+}
+.next-card .star-list li { color: var(--ink); }
+.next-card .next-note { color: var(--ink-soft); font-style: italic; margin: 0; }
