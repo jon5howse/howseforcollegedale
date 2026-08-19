@@ -10,7 +10,7 @@ A fast, mobile-first site for Commissioner Laura Howse, built as **plain HTML/CS
 | `lauras-work.html` | Bio, board service, highlights, and the full 46-meeting register with official video links |
 | `community-care.html` | What CARE meetings are, the values, and the fifth-Monday schedule through May 2027 |
 | `gallery.html` | "Faces of Collegedale" photo gallery — 25 captioned photos, easy to add to |
-| `voting-record.html` | Every roll-call vote (229 so far), parsed from the approved minutes in the agenda packets — searchable, topic-tagged, with a commissioner-by-commissioner attendance comparison |
+| `voting-record.html` | Every roll-call vote (231 so far), parsed from the approved minutes in the agenda packets — searchable, topic-tagged, with a commissioner-by-commissioner attendance comparison |
 | `contact.html` | Email, in-person options, official city links |
 | `styles.css` | All design (navy `#1F2B5C`, red `#C22030`, star accents — matched to the yard sign) |
 | `site.js` | Mobile menu + subtle scroll animation |
