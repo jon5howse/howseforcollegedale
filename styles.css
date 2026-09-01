@@ -639,3 +639,7 @@ main { background: var(--paper); }
   text-underline-offset: 3px; text-decoration-color: rgba(31,43,92,0.35);
 }
 .next-card .star-list a:hover { color: var(--red); text-decoration-color: var(--red); }
+
+.photo-duo figure { margin: 0; }
+.photo-duo figure img { width: 100%; }
+.photo-duo figcaption { font-size: 0.92rem; color: var(--ink-soft); padding-top: 0.55rem; line-height: 1.45; }
