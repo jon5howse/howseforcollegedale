@@ -633,3 +633,9 @@ main { background: var(--paper); }
   border-radius: var(--radius); box-shadow: var(--shadow); display: block;
 }
 .video-card figcaption { font-size: 0.92rem; color: var(--ink-soft); padding-top: 0.6rem; line-height: 1.45; }
+
+.next-card .star-list a {
+  color: var(--navy); text-decoration: underline;
+  text-underline-offset: 3px; text-decoration-color: rgba(31,43,92,0.35);
+}
+.next-card .star-list a:hover { color: var(--red); text-decoration-color: var(--red); }
