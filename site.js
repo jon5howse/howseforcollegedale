@@ -71,4 +71,12 @@ if (!prefersReduced && 'IntersectionObserver' in window) {
     if (d) els[i].textContent = d.toLocaleDateString('en-US',
       { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
   }
+  var bigs = document.querySelectorAll('[data-next-big]');
+  for (var j = 0; j < bigs.length; j++) {
+    var cb = CFG[bigs[j].getAttribute('data-next-big')];
+    if (!cb) continue;
+    var db = nextMeeting(cb.nths, cb.h, cb.min, cb.shift);
+    if (db) bigs[j].innerHTML = db.toLocaleDateString('en-US', { weekday: 'long' }) + '<br>' +
+      db.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
 })();
