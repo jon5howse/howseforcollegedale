@@ -137,6 +137,13 @@
           <button class="fchip" data-topic="Resolutions">Resolutions (5)</button>
           <button class="fchip" data-topic="Appointments">Appointments (5)</button>
         </div>
+        <div class="filters" style="margin-top:0.6rem;" role="group" aria-label="Filter by how she voted">
+          <button class="fchip active" data-vote="any">Any vote</button>
+          <button class="fchip" data-vote="yea">Yea</button>
+          <button class="fchip" data-vote="nay">Nay</button>
+          <button class="fchip" data-vote="abstain">Abstain</button>
+          <button class="fchip" data-vote="absent">Absent</button>
+        </div>
         <p class="vote-count" id="vcount" aria-live="polite">Showing all 231 votes</p>
 
         <div class="register-shell reveal">
@@ -1822,13 +1829,19 @@
   (function () {
     const rows = Array.from(document.querySelectorAll('.vote-row'));
     const count = document.getElementById('vcount');
-    const state = { q: '', topic: 'All', close: false, mine: false };
+    rows.forEach(r => {
+      const b = r.querySelector('.v-badge');
+      const m = b ? b.className.match(/v-(yea|nay|abstain|absent)/) : null;
+      r.dataset.vote = m ? m[1] : '';
+    });
+    const state = { q: '', topic: 'All', close: false, mine: false, vote: 'any' };
     function apply() {
       let shown = 0;
       rows.forEach(r => {
         const ok = (state.topic === 'All' || r.dataset.topic === state.topic)
           && (!state.close || r.dataset.close === '1')
           && (!state.mine || r.dataset.mover === '1')
+          && (state.vote === 'any' || r.dataset.vote === state.vote)
           && (!state.q || r.textContent.toLowerCase().includes(state.q));
         r.style.display = ok ? '' : 'none';
         if (ok) shown++;
@@ -1845,6 +1858,17 @@
       if (b.dataset.special === 'close') state.close = on; else state.mine = on;
       apply();
     }));
+    document.querySelectorAll('.fchip[data-vote]').forEach(b => {
+      const v = b.dataset.vote;
+      if (v !== 'any') {
+        const n = rows.filter(r => r.dataset.vote === v).length;
+        b.textContent += ' (' + n + ')';
+      }
+      b.addEventListener('click', () => {
+        document.querySelectorAll('.fchip[data-vote]').forEach(x => x.classList.remove('active'));
+        b.classList.add('active'); state.vote = v; apply();
+      });
+    });
   })();
   </script>
   <!-- Cloudflare Web Analytics -->
