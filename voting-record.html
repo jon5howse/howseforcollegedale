@@ -121,6 +121,7 @@
           <input type="search" id="vsearch" placeholder="Search votes — try &quot;Apison&quot;, &quot;budget&quot;, &quot;ordinance&quot;…" aria-label="Search votes">
           <button class="fchip red" data-special="close">Close votes (19)</button>
           <button class="fchip red" data-special="mine">Moved or seconded (121)</button>
+          <button class="fchip red" data-special="supfail">Supported, but failed</button>
         </div>
         <div class="filters" role="group" aria-label="Topic filters">
           <button class="fchip active" data-topic="All">All topics</button>
@@ -1138,7 +1139,7 @@
             </tr>
             <tr class="vote-row" data-topic="Roads & Traffic" data-mover="1" data-close="1">
               <td class="reg-date">Aug 4, 2025</td>
-              <td><strong>Compression braking signage on Apison Pike</strong><span class="vote-desc">approve the placement of ”NO JAKE BRAKE” signs on Apison Pike.</span><span class="topic-tag">Roads & Traffic</span></td>
+              <td><strong>Compression braking signage on Apison Pike</strong><span class="vote-desc">approve the placement of ”NO JAKE BRAKE” signs on Apison Pike.</span><span class="topic-tag">Roads & Traffic</span><div class="vote-why"><strong>★ Why she moved this</strong><span class="pending">Laura&rsquo;s note on this vote is coming soon.</span></div></td>
               <td class="v-cell"><span class="v-badge v-yea">Yea</span><span class="mini">Moved</span></td>
               <td class="res-cell"><span class="result-failed">Failed 2–3</span></td>
               <td class="reg-link"><a href="https://play.champds.com/collegedaletn/event/82" target="_blank" rel="noopener">Watch&nbsp;&rarr;</a></td>
@@ -1833,8 +1834,9 @@
       const b = r.querySelector('.v-badge');
       const m = b ? b.className.match(/v-(yea|nay|abstain|absent)/) : null;
       r.dataset.vote = m ? m[1] : '';
+      r.dataset.failed = r.querySelector('.result-failed') ? '1' : '0';
     });
-    const state = { q: '', topic: 'All', close: false, mine: false, vote: 'any' };
+    const state = { q: '', topic: 'All', close: false, mine: false, vote: 'any', supfail: false };
     function apply() {
       let shown = 0;
       rows.forEach(r => {
@@ -1842,6 +1844,7 @@
           && (!state.close || r.dataset.close === '1')
           && (!state.mine || r.dataset.mover === '1')
           && (state.vote === 'any' || r.dataset.vote === state.vote)
+          && (!state.supfail || (r.dataset.vote === 'yea' && r.dataset.failed === '1'))
           && (!state.q || r.textContent.toLowerCase().includes(state.q));
         r.style.display = ok ? '' : 'none';
         if (ok) shown++;
@@ -1855,9 +1858,11 @@
     }));
     document.querySelectorAll('.fchip[data-special]').forEach(b => b.addEventListener('click', () => {
       const on = b.classList.toggle('active');
-      if (b.dataset.special === 'close') state.close = on; else state.mine = on;
+      if (b.dataset.special === 'close') state.close = on; else if (b.dataset.special === 'supfail') state.supfail = on; else state.mine = on;
       apply();
     }));
+    const sf = document.querySelector('.fchip[data-special="supfail"]');
+    if (sf) sf.textContent += ' (' + rows.filter(r => r.dataset.vote === 'yea' && r.dataset.failed === '1').length + ')';
     document.querySelectorAll('.fchip[data-vote]').forEach(b => {
       const v = b.dataset.vote;
       if (v !== 'any') {
