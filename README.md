@@ -130,3 +130,16 @@ The homepage's "Latest from City Hall" section is removed until there's a first 
       </div>
     </section>
 ```
+
+## PENDING — next record update (Sept 8 minutes, expected in the ~Sept 21 packet)
+
+- **Res #581 — flag sizes at Veterans Memorial Park: Laura voted NO** (per Jon, 9/8/26, ahead of minutes).
+  Context from Jon, verbatim intent: the flag-size change was brought to the commission and largely
+  supported by the American Legion and the veterans. Laura opposed the **removal of the large flag** —
+  her position is about preserving history and the park's original design with the largest flag,
+  **not** about the veterans being wrong.
+  - Row enters the ledger only from the approved minutes (tally, mover, result as recorded).
+  - The row should get a vote-why slot; fill it ONLY with Laura's verbatim note — request her words
+    when the row lands, or stage them earlier if she sends them.
+- Also expected from the 9/8 meeting per its agenda: Flock license-plate-reader withdrawal vote,
+  courtroom dedication (Judge Kevin B. Wilson), veterans fee-waiver follow-up. Minutes will confirm.
