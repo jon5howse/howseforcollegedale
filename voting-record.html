@@ -69,11 +69,11 @@
           </div>
           <div class="stat reveal">
             <span class="num">42<span style="font-size:0.5em;">&nbsp;of&nbsp;43</span></span>
-            <span class="label">meetings attended — the best attendance on the commission, with the fewest missed roll-call votes (6 of 306)</span>
+            <span class="label">meetings attended &mdash; 6 of 311 roll-call votes missed since December 2, 2024</span>
           </div>
         </div>
-      </div>
         <p class="stat-stamp"><!-- EDIT ME each update -->Statistics current through September 2026.</p>
+      </div>
     </section>
 
     <!-- ═══ ATTENDANCE ═══ -->
@@ -81,6 +81,38 @@
       <div class="wrap">
         <p class="eyebrow">Showing up</p>
         <p class="att-solo">Laura&rsquo;s attendance: <strong>42 of 43 meetings (98%)</strong> &mdash; 6 of 311 roll-call votes missed since December 2, 2024.<!-- EDIT ME each update --></p>
+        
+        <p class="eyebrow" style="margin-top:2.4rem;">Search the ledger</p>
+        <h2>236 votes, filterable</h2>
+        <p class="section-intro">Search by keyword (a street, a project, an ordinance number) or filter by topic.<br>"Close votes" shows everything that wasn't unanimous.</p>
+        <div class="filters">
+          <input id="vsearch" type="search" placeholder='Search votes — try "Apison", "budget", "ordinance"…' aria-label="Search votes">
+          <button class="fchip red" data-special="close">Close votes (19)</button>
+          <button class="fchip red" data-special="mine">Moved or seconded (125)</button>
+          <button class="fchip red" data-special="supfail">Supported, but failed</button>
+        </div>
+        <div class="filters">
+          <button class="fchip active" data-topic="All">All topics</button>
+          <button class="fchip" data-topic="Budget & Contracts">Budget & Contracts (65)</button>
+          <button class="fchip" data-topic="Public Safety">Public Safety (30)</button>
+          <button class="fchip" data-topic="Planning & Zoning">Planning & Zoning (28)</button>
+          <button class="fchip" data-topic="Beer Board">Beer Board (18)</button>
+          <button class="fchip" data-topic="Roads & Traffic">Roads & Traffic (17)</button>
+          <button class="fchip" data-topic="Airport">Airport (17)</button>
+          <button class="fchip" data-topic="Ordinances">Ordinances (16)</button>
+          <button class="fchip" data-topic="General">General (14)</button>
+          <button class="fchip" data-topic="Parks & Community">Parks & Community (11)</button>
+          <button class="fchip" data-topic="Utilities & Facilities">Utilities & Facilities (9)</button>
+          <button class="fchip" data-topic="Resolutions">Resolutions (5)</button>
+          <button class="fchip" data-topic="Appointments">Appointments (5)</button>
+        </div>
+        <div class="filters" style="margin-top:0.6rem;" role="group" aria-label="Filter by how she voted">
+          <button class="fchip active" data-vote="any">Any vote</button>
+          <button class="fchip" data-vote="yea">Yea</button>
+          <button class="fchip" data-vote="nay">Nay</button>
+          <button class="fchip" data-vote="abstain">Abstain</button>
+          <button class="fchip" data-vote="absent">Absent</button>
+        </div>
         <p class="vote-count" id="vcount" aria-live="polite">Showing all 236 votes</p>
 
         <div class="register-shell reveal">
