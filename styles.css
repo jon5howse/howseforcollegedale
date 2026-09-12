@@ -660,3 +660,5 @@ main { background: var(--paper); }
 .mf-note { font-size: 0.8rem; color: var(--ink-soft); margin-top: 0.4rem; }
 .mf-city { max-width: 640px; margin-top: 1.4rem; font-size: 0.95rem; }
 .mf-city a { color: var(--navy); }
+
+.contact-card .btn + .btn { margin-top: 0.6rem; }
