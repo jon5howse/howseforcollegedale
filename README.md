@@ -66,7 +66,7 @@ On github.com, open any file and click the **pencil icon** to edit, then **Commi
 ## Before you go live — 5-minute checklist
 
 - [x] Photos are in — 20 optimized images ship in `/images` (captions are marked `EDIT ME` in `gallery.html` if you want to reword any)
-- [ ] Confirm `howse4commissioner@gmail.com` is still the email Laura wants public (it's on her current site)
+- [ ] Confirm `lhowse@collegedaletn.gov` is still the email Laura wants public (it's on her current site)
 - [ ] Add Laura's Facebook page to `contact.html` if she wants it linked (marked spot at the bottom)
 - [ ] Confirm the "Paid for by Howse for Commissioner" footer line matches how you want the site attributed
 - [ ] Skim every page on your phone — the whole site is built mobile-first
@@ -139,7 +139,49 @@ The homepage's "Latest from City Hall" section is removed until there's a first 
   her position is about preserving history and the park's original design with the largest flag,
   **not** about the veterans being wrong.
   - Row enters the ledger only from the approved minutes (tally, mover, result as recorded).
-  - The row should get a vote-why slot; fill it ONLY with Laura's verbatim note — request her words
-    when the row lands, or stage them earlier if she sends them.
+  - **Laura's verbatim note is STAGED below (received 9/8/26, zero edits). When the row is inserted,
+    add a vote-why block with header "★ Why she voted no" containing this text exactly (encode
+    apostrophes/em-dash as HTML entities only):**
+
+    > I voted NO on the resolution to reduce the size of the flag at Veterans Memorial Park.
+    > The park was designed by a team of Collegedale veterans, and the 125-foot flagpole was
+    > intentionally designed to fly a 30-by-50-foot flag. That size is appropriate for the pole and
+    > within the applicable specifications.
+    > For me, this is about more than the size of a flag. It is about respecting the vision of the
+    > veterans who designed this memorial and honoring the purpose for which it was created.
+    > Phil Garver's daughter recently attended our meeting and reminded us that her father
+    > intentionally designed this park. He passed away only a year ago, and she continues to visit
+    > the park to grieve and honor his memory. I believe that perspective deserves to be heard and
+    > respected.
+    > As a commissioner, I believe we have a responsibility to preserve the intent of our
+    > community's memorials—not reduce them simply because a smaller option may be easier.
+    > Ooltewah High School JROTC has also volunteered to assist with the flag whenever needed, and
+    > I have been assured that the decision is not about the additional expense of flying the
+    > larger flag.
+    > I voted NO because I believe the 30-by-50-foot flag honors our veterans, respects the vision
+    > of those who designed the memorial, and is the appropriate flag for the 125-foot pole.
 - Also expected from the 9/8 meeting per its agenda: Flock license-plate-reader withdrawal vote,
   courtroom dedication (Judge Kevin B. Wilson), veterans fee-waiver follow-up. Minutes will confirm.
+
+## DECEMBER 2026 — commission transition plan (SETTLED 9/8/26; execute after the new commission seats)
+
+Facts (internal planning only — the SITE publishes nothing about elections or candidacies):
+November 2026 election; Mayor Lloyd not seeking re-election; new commission historically seated at the
+first December commission meeting (first Monday, Dec 7, 2026). Laura's term runs to 2028.
+
+SETTLED DESIGN — Laura's record is CONTINUOUS; only the seated-commission attendance comparison resets:
+1. VOTE LEDGER: continuous, no reset, no separate archive page. Range stays "Dec 2, 2024 -> [current]"
+   and keeps growing through Laura's term. All stats (vote count, moved/seconded, her attendance
+   "X of Y meetings") continue cumulatively.
+2. "IN OFFICE" REGISTER: continuous, never closes out (Laura-tenure-scoped through 2028).
+3. ATTENDANCE: the comparative five-member table was REMOVED 9/9/26 at Laura's direction. Her personal
+   attendance line (.att-solo) is cumulative and continuous — just keep updating its numbers. No December
+   attendance action needed beyond that. (Original reset plan below is superseded.)
+   [superseded] 3. ATTENDANCE TABLE (the five-member comparison): describes the SEATED commission, so it resets.
+   On the first update after seating: (a) snapshot the final 2024–2026 table into an
+   "Archived — 2024–2026 Commission attendance" block kept below the live table (frozen; edit only for
+   minutes-sourced corrections); (b) start a fresh live table for the newly seated five at zero, with
+   its method note scoped "from December 7, 2026".
+4. Homepage stats: continuous (follow the ledger automatically).
+
+- Each record update: bump the two 'Statistics current through <Month Year>' stamps (index + voting-record) and the .att-solo attendance line.

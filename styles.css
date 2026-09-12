@@ -643,3 +643,20 @@ main { background: var(--paper); }
 .photo-duo figure { margin: 0; }
 .photo-duo figure img { width: 100%; }
 .photo-duo figcaption { font-size: 0.92rem; color: var(--ink-soft); padding-top: 0.55rem; line-height: 1.45; }
+
+.hero-signature {
+  font-family: 'Archivo', sans-serif; font-weight: 800; letter-spacing: 0.14em;
+  text-transform: uppercase; font-size: clamp(0.8rem, 2.2vw, 1.05rem);
+  color: #F2B8BE; margin-top: 0.9rem;
+}
+.stat-stamp { font-size: 0.82rem; font-style: italic; color: var(--ink-soft); margin-top: 0.9rem; }
+.att-solo { font-size: 1.05rem; margin: 1.2rem 0 0.4rem; }
+.mailform { max-width: 560px; display: grid; gap: 0.45rem; background: #fff; border-radius: 12px;
+  padding: 1.2rem 1.3rem; box-shadow: var(--shadow); }
+.mailform label { font-weight: 700; font-size: 0.85rem; margin-top: 0.5rem; }
+.mailform select, .mailform input, .mailform textarea {
+  font: inherit; padding: 0.55rem 0.7rem; border: 1.5px solid #C9CFE2; border-radius: 8px; background: #fff; color: var(--ink); }
+.mailform button { margin-top: 0.8rem; justify-self: start; }
+.mf-note { font-size: 0.8rem; color: var(--ink-soft); margin-top: 0.4rem; }
+.mf-city { max-width: 640px; margin-top: 1.4rem; font-size: 0.95rem; }
+.mf-city a { color: var(--navy); }

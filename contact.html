@@ -96,7 +96,44 @@
       </div>
     </section>
 
-  </main>
+  
+    <!-- ═══ WRITE TO LAURA (category composer) ═══ -->
+    <section class="section" id="write">
+      <div class="wrap">
+        <p class="eyebrow">Write to Laura</p>
+        <h2>Start your email here</h2>
+        <p class="section-intro">Pick a category and your note opens in your own mail app, addressed and labeled — so it lands in the right stack.</p>
+        <div class="mailform reveal">
+          <label for="mf-cat">Category</label>
+          <select id="mf-cat">
+            <option>City Issue</option><option>Neighborhood Concern</option><option>Commission Question</option>
+            <option>Community CARE</option><option>Volunteer Opportunity</option><option>Other</option>
+          </select>
+          <label for="mf-topic">Topic (a few words)</label>
+          <input id="mf-topic" type="text" maxlength="90" placeholder="e.g., speeding on my street">
+          <label for="mf-msg">Your message</label>
+          <textarea id="mf-msg" rows="5" placeholder="Include your neighborhood if it's about a specific street or project."></textarea>
+          <button class="btn btn-red" id="mf-send" type="button">Open email draft</button>
+          <p class="mf-note">This opens a draft to lhowse@collegedaletn.gov in your own email app — nothing is sent until you hit send there.</p>
+        </div>
+        <p class="mf-city">Looking for city services — permits, utilities, court, or police non-emergency? Those are handled by City Hall through the <a href="https://www.collegedaletn.gov/" target="_blank" rel="noopener">city&rsquo;s official website</a>. For emergencies, call 911. This inbox reaches Laura as your commissioner.</p>
+      </div>
+    </section>
+    <script>
+    (function () {
+      var b = document.getElementById('mf-send');
+      if (!b) return;
+      b.addEventListener('click', function () {
+        var cat = document.getElementById('mf-cat').value;
+        var topic = document.getElementById('mf-topic').value.trim();
+        var msg = document.getElementById('mf-msg').value.trim();
+        var subject = '[' + cat + ']' + (topic ? ' ' + topic : '');
+        window.location.href = 'mailto:lhowse@collegedaletn.gov?subject=' +
+          encodeURIComponent(subject) + '&body=' + encodeURIComponent(msg);
+      });
+    })();
+    </script>
+</main>
 
   <footer class="site-footer">
     <div class="wrap">
@@ -130,7 +167,7 @@
         </div>
       </div>
       <div class="footer-legal">
-        <span>© 2026 Howse for Commissioner. This site is maintained by Commissioner Laura Howse and is not an official City of Collegedale website.</span>
+        <span>© 2026 Laura Howse | Commissioner, City of Collegedale. This is a privately maintained website for Commissioner Laura Howse and is not an official City of Collegedale website.</span>
         <span>howseforcollegedale.com · howseforcommissioner.com</span>
       </div>
     </div>
