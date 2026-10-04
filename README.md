@@ -131,13 +131,17 @@ The homepage's "Latest from City Hall" section is removed until there's a first 
     </section>
 ```
 
-## PENDING — next record update (Sept 21 minutes, expected in the ~Oct 5 packet)
+## PENDING — next record update (Oct 5 minutes, expected in the ~Oct 19 packet)
 
-- 9/21/26 agenda held: Res #583 (Airport Advisory Board appointments — Farrow/Record/Merz/Brown/Krohne),
-  Res #584 (Ardurra Group retaining-wall task order, ~$54,500 design + est. $78,000 RPR; Ardurra is the
-  parent company of Cannon & Cannon per Laura — the two names in the resolution are reconciled),
-  FY27 Airport Maintenance Grant, August finance report. Watch the tally and any Howse motions.
-- The Res #581 flag row + Laura's verbatim note were PUBLISHED 9/21/26 with the Sept 8 minutes.
+- 10/5/26 agenda holds: Res #585 (MOU with Southern Adventist University School of Nursing for Storm
+  Safety Day) and Res #586 (appointing ONE COMMISSIONER as Airport Board liaison/ex officio, 1-year
+  term — the name is blank in the draft; watch who gets it, could be Laura). Plus Sept 21 + Sept 28
+  workshop minutes on consent. Add the Oct 5 register row once the meeting has been held.
+- OPEN WHY-SLOT: Sept 21 Res #584 FIRST motion (Failed 2-2, Howse Nay) — her note is invited; the
+  second motion (which she seconded) stripped the ~$78K hourly RPR line from the task order.
+- Stamp "Statistics current through September 2026" stays until Oct minutes land, then bump to October.
+- Published 10/4/26 from the Oct 5 packet: all four Sept 21 votes. Sept 8 minutes were approved
+  unchanged on 9/21 consent (validates the packet-day publishing cadence).
 ## DECEMBER 2026 — commission transition plan (SETTLED 9/8/26; execute after the new commission seats)
 
 Facts (internal planning only — the SITE publishes nothing about elections or candidacies):
