@@ -131,17 +131,24 @@ The homepage's "Latest from City Hall" section is removed until there's a first 
     </section>
 ```
 
-## PENDING — next record update (Oct 5 minutes, expected in the ~Oct 19 packet)
+## PENDING — next record update (Oct 19 minutes, expected in the ~Nov 2 packet)
 
-- 10/5/26 agenda holds: Res #585 (MOU with Southern Adventist University School of Nursing for Storm
-  Safety Day) and Res #586 (appointing ONE COMMISSIONER as Airport Board liaison/ex officio, 1-year
-  term — the name is blank in the draft; watch who gets it, could be Laura). Plus Sept 21 + Sept 28
-  workshop minutes on consent. Add the Oct 5 register row once the meeting has been held.
-- OPEN WHY-SLOT: Sept 21 Res #584 FIRST motion (Failed 2-2, Howse Nay) — her note is invited; the
-  second motion (which she seconded) stripped the ~$78K hourly RPR line from the task order.
-- Stamp "Statistics current through September 2026" stays until Oct minutes land, then bump to October.
-- Published 10/4/26 from the Oct 5 packet: all four Sept 21 votes. Sept 8 minutes were approved
-  unchanged on 9/21 consent (validates the packet-day publishing cadence).
+- 10/19/26 agenda: Quilts of Valor presentation for Officer Alec Hood (Commission Forum, no vote); Ord #1181
+  FIRST reading (Katie Lamb Library joins the Tennessee Regional Library System; new library board, effective
+  1/1/27; a SECOND reading will follow, watch for it); Res #587 (Iron Rail Cams MOU for a Tucker Rd railroad
+  camera, no cost to City); Res #588 (Centralized Personnel Authority Policy: City Manager approval for job
+  descriptions, org structure, pay/classification changes; his memo acknowledges it may raise concerns);
+  September finance report. Add the Oct 19 register row only AFTER the meeting is held.
+- WHY-SLOTS: none open. The Res #584 note was published 10/16/26, verbatim, no wording changes. If she
+  votes Nay/Abstain on anything Oct 19 (esp. Res #588), request her note when the row lands.
+- BEER BOARD GAP: a Beer Board session met 10/5/26 (agenda posted; the commission minutes' invocation line
+  references it) but its MINUTES are not posted. No rows or register entry yet. When minutes post, add its
+  votes + the meeting + its roll calls, and bump the attendance denominators.
+- Stamp: "Statistics current through <Month Year>" (voting-record.html only) now says October 2026; bump to
+  November 2026 when the Oct 19 minutes land.
+- Published 10/16/26 from the Oct 19 packet: both Oct 5 votes (Res #585 SAU School of Nursing MOU; Res #586
+  airport board liaison = Vice Mayor Sadler, two-year term to 10/5/28; both 5-0, all five present). Sept 21
+  minutes were approved on the Oct 5 consent agenda with no amendments noted.
 ## DECEMBER 2026 — commission transition plan (SETTLED 9/8/26; execute after the new commission seats)
 
 Facts (internal planning only — the SITE publishes nothing about elections or candidacies):
@@ -163,4 +170,4 @@ SETTLED DESIGN — Laura's record is CONTINUOUS; only the seated-commission atte
    its method note scoped "from December 7, 2026".
 4. Homepage stats: continuous (follow the ledger automatically).
 
-- Each record update: bump the two 'Statistics current through <Month Year>' stamps (index + voting-record) and the .att-solo attendance line.
+- Each record update: bump the 'Statistics current through <Month Year>' stamp (voting-record only) and the .att-solo attendance line.
