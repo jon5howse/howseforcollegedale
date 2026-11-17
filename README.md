@@ -2,16 +2,16 @@
 
 A fast, mobile-first site for Commissioner Laura Howse, built as **plain HTML/CSS/JS** — no Node.js, no build step, no admin rights needed. Everything can be edited right in your web browser on github.com, which solves the exact problems that blocked the earlier Next.js/Cursor/Codespaces attempts.
 
-## HANDOFF — for a new Claude chat (read this first; refreshed 10/16/26)
+## HANDOFF — for a new Claude chat (read this first; refreshed 11/16/26)
 
 **Source of truth = this repo (GitHub: Code > Download ZIP), not stored notes, which can be weeks stale.**
 Restore: unzip the repo ZIP Jon uploads -> copy it to /home/claude/howseforcollegedale -> make preview thumbnails
 (images/*.jpg -> preview_imgs/, 560 px wide, q70) -> confirm the state markers below. The sandbox is wiped between chats.
 This repo is PUBLIC and the README is world-readable: keep private, personal and political details out of it.
 
-State markers (they change every update): voting-record.html has 249 vote rows (Yea 242 / Nay 4 / Abstain 1 / Absent 2),
-6 vote-why blocks all filled and 0 "coming soon"; the register in lauras-work.html has 54 rows; the stamp reads
-"Statistics current through October 2026"; Laura's attendance line is 45 of 46 meetings, 6 of 324 roll calls missed;
+State markers (they change every update): voting-record.html has 257 vote rows (Yea 250 / Nay 4 / Abstain 1 / Absent 2),
+6 vote-why blocks all filled and 0 "coming soon"; the register in lauras-work.html has 56 rows; the stamp reads
+"Statistics current through November 2026"; Laura's attendance line is 47 of 48 meetings, 6 of 332 roll calls missed;
 the contact email is lhowse@collegedaletn.gov.
 
 ### Standing rules
@@ -188,24 +188,28 @@ The homepage's "Latest from City Hall" section is removed until there's a first 
     </section>
 ```
 
-## PENDING — next record update (Oct 19 minutes, expected in the ~Nov 2 packet)
+## PENDING — next record update (Nov 16 minutes, expected in the ~Nov 30 packet for the Dec 7 meeting)
 
-- 10/19/26 agenda: Quilts of Valor presentation for Officer Alec Hood (Commission Forum, no vote); Ord #1181
-  FIRST reading (Katie Lamb Library joins the Tennessee Regional Library System; new library board, effective
-  1/1/27; a SECOND reading will follow, watch for it); Res #587 (Iron Rail Cams MOU for a Tucker Rd railroad
-  camera, no cost to City); Res #588 (Centralized Personnel Authority Policy: City Manager approval for job
-  descriptions, org structure, pay/classification changes; his memo acknowledges it may raise concerns);
-  September finance report. Add the Oct 19 register row only AFTER the meeting is held.
-- WHY-SLOTS: none open. The Res #584 note was published 10/16/26, verbatim, no wording changes. If she
-  votes Nay/Abstain on anything Oct 19 (esp. Res #588), request her note when the row lands.
-- BEER BOARD GAP: a Beer Board session met 10/5/26 (agenda posted; the commission minutes' invocation line
-  references it) but its MINUTES are not posted. No rows or register entry yet. When minutes post, add its
-  votes + the meeting + its roll calls, and bump the attendance denominators.
-- Stamp: "Statistics current through <Month Year>" (voting-record.html only) now says October 2026; bump to
-  November 2026 when the Oct 19 minutes land.
-- Published 10/16/26 from the Oct 19 packet: both Oct 5 votes (Res #585 SAU School of Nursing MOU; Res #586
-  airport board liaison = Vice Mayor Sadler, two-year term to 10/5/28; both 5-0, all five present). Sept 21
-  minutes were approved on the Oct 5 consent agenda with no amendments noted.
+- 11/16/26 agenda (packet posted 11/13): Ord #1181 SECOND reading + public hearing (library joins the Tennessee Regional
+  Library System); Ord #1183 SECOND reading + public hearing (Zoning Ordinance Ch. 8, Signs); Res #590 (St. Jude Dream
+  Home fee waiver); Res #592 (2027 Freedom Fest event-coordination bid award); Res #593 (ADA self-certification
+  signer, TDOT); Res #594 (delegating administrative plat review to planning staff); Res #595 (library computer
+  purchase); October finance report; part-time library staff benefits discussion (no vote listed). Add the Nov 16
+  register row only AFTER the meeting is held.
+- WHY-SLOTS: none open. If she votes Nay/Abstain on anything Nov 16, request her note when the row lands.
+- BEER BOARD GAP: the 10/5/26 Beer Board session still has only an agenda posted (no minutes). No rows or register entry
+  yet. When minutes post, add its votes + the meeting + its roll calls, and bump the attendance denominators.
+- Stamp: voting-record.html says "Statistics current through November 2026"; bump to December 2026 when the Nov 16
+  minutes land.
+- Published 11/16/26: the Oct 19 votes (Ord #1181 deferral, Res #587, Res #588, September finance report; Mayor absent,
+  all 4-0) and the Nov 2 votes (Ord #1181 first reading, Ord #1183 first reading, Res #589, 2027 benefits renewal; all
+  5-0). Both meetings' register rows were added. The Oct 19 and Nov 2 consent items show no roll call in the minutes,
+  so only the eight roll calls above were added to the attendance denominator (324 -> 332).
+- Topic calls made 11/16/26 (change if Laura/Jon prefer): Res #587 Iron Rail camera = Roads & Traffic; Res #588 and
+  Res #589 and the benefits renewal = General (matches earlier personnel items); Ord #1183 = Planning & Zoning.
+- Fixed 11/16/26: the "Utilities & Facilities" filter chip had said 9 while 10 rows carry that topic; it now says 10.
+- The 10/26/26 workshop discussed airport funding, the library ordinance and sign-ordinance edits; workshops are not in the
+  ledger or the register.
 ## DECEMBER 2026 — commission transition (SETTLED 9/8/26; revised 10/16/26)
 
 A new commission is seated at the first December commission meeting (Dec 7, 2026). Laura's term runs to 2028.
