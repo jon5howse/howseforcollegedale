@@ -53,7 +53,8 @@ the contact email is lhowse@collegedaletn.gov.
 - Then: battery -> rebuild preview + zip -> present -> tell Jon which files to upload (usually voting-record.html,
   lauras-work.html, index.html, README.md) -> say what was held back and why.
 - Other recurring jobs: the CARE page calendar chips are manual (EDIT ME). site.js computes meeting dates (commission
-  1st/3rd Monday 6 PM, workshop 4th Monday 4:30 PM, CARE 5th Monday). CARE videos: ffmpeg 540x960 H.264 crf26 aac96k
+  1st/3rd Monday 6 PM, workshop 4th Monday 4:30 PM, CARE 5th Monday). When the city cancels a meeting, add its date (YYYY-MM-DD) to the
+  CANCELLED list in site.js (the Nov 23, 2026 workshop is listed). CARE videos: ffmpeg 540x960 H.264 crf26 aac96k
   +faststart, poster frame eyeballed, at most 2 videos per GitHub commit; the preview shows video posters only.
 - build_preview.py (if Jon attaches it) builds the single-file preview; otherwise rebuild it: concatenate each page's
   <main id="main"> into one file, inline thumbnails for src= and poster=, add site.js, a small page router and the

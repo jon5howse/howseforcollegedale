@@ -44,6 +44,12 @@ if (!prefersReduced && 'IntersectionObserver' in window) {
     if (hol) { var t = new Date(d); t.setDate(d.getDate() + 1); return t; }
     return d;
   }
+  /* CANCELLED: dates (YYYY-MM-DD, after any holiday shift) that the city has
+     cancelled. Add a date here and the "next meeting" lines skip it. */
+  var CANCELLED = ['2026-11-23'];
+  function dateKey(d) {
+    return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+  }
   function nextMeeting(nths, h, min, shift) {
     var now = new Date();
     for (var i = 0; i < 18; i++) {
@@ -52,6 +58,7 @@ if (!prefersReduced && 'IntersectionObserver' in window) {
         var d = nthMonday(new Date(y, mo, 1).getFullYear(), new Date(y, mo, 1).getMonth(), nths[k]);
         if (!d) continue;
         if (shift) d = holidayShift(d);
+        if (CANCELLED.indexOf(dateKey(d)) !== -1) continue;
         d.setHours(h, min, 0, 0);
         if (d > now) return d;
       }
